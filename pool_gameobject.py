@@ -6,13 +6,13 @@ file1 = open("pool_try.txt", "r", encoding='utf-8')
 result = open('pool_gameobject.txt', 'w', encoding='utf-8')
 result2 = open('pool_template.txt', 'w', encoding='utf-8')
 
-pool_start = 7370           //Pool id
-pool_event = 5              //How many gameobjects involved
+pool_start = 7370           #Pool id
+pool_event = 5              #How many gameobjects involved
 count = 0
-event = 1                   //How many gameobjects will appear 
-chance = 0                  //Chance, default = 0 to keep all chances equal
-gob_name = 'Gameobject Name' //For comments in pool_template and pool_gameobject
-gob_zone = 'Zone Name'      //For comments in pool_template and pool_gameobject
+event = 1                   #How many gameobjects will appear 
+chance = 0                  #Chance, default = 0 to keep all chances equal
+gob_name = 'Gameobject Name' #For comments in pool_template and pool_gameobject
+gob_zone = 'Zone Name'      #For comments in pool_template and pool_gameobject
 entry = Template('( $GUID, $start, $chance, \' $gob_name - $gob_zone $event \' ),\n')
 entry2 = Template('($START, 1, \' $gob_name - $gob_zone $event \' ),\n')
 
